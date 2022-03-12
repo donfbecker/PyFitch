@@ -9,7 +9,7 @@ import glob
 
 import numpy as np
 
-import tflite_runtime.interpreter as tflite
+import tensorflow.lite as tflite
 from PIL import Image
 
 from PyQt5.QtGui import *
