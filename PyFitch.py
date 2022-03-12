@@ -26,7 +26,7 @@ output_layer   = "InceptionV3/Predictions/Reshape_1"
 def _most_recent_model():
     files = glob.glob("models/*.tflite")
     if len(files) > 0:
-        files.sort(reverse=True, key=lambda name: name[-11:])
+        files.sort(reverse=True, key=lambda name: name[-12:])
         labels = files[0].replace(".tflite", ".txt");
         return files[0], labels
     return None,None
